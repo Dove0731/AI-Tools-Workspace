@@ -1,0 +1,117 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+[mcp_servers.kingdee_readonly]
+command = "powershell.exe"
+args = ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "E:\\新AI工具人\\07_AI工作区\\金蝶MCP连接\\launch_mcp.ps1"]
+cwd = "E:\\新AI工具人\\07_AI工作区\\金蝶MCP连接"
+enabled = true
+required = false
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+enabled_tools = [
+  "test_connection",
+  "query_purchase_orders",
+  "query_purchase_receipts",
+  "query_inventory",
+  "query_suppliers",
+  "query_materials",
+]
+disabled_tools = [
+  "create_purchase_order",
+  "audit_document",
+  "unaudit_document",
+  "delete_document",
+  "payment_operation",
+]
+default_tools_approval_mode = "auto"
+
+[mcp_servers.lark-mcp-doc-write-controlled]
+command = "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+args = ["C:\\Users\\Administrator\\.codex\\scripts\\Start-FeishuDocWriteBridge.mjs"]
+cwd = "C:\\Users\\Administrator\\.codex\\tools\\lark-mcp"
+enabled = true
+required = false
+startup_timeout_sec = 60
+tool_timeout_sec = 60
+enabled_tools = [
+  "docx.v1.document.create",
+  "docx.v1.documentBlockChildren.create",
+]
+disabled_tools = [
+  "docx.v1.documentBlock.patch",
+  "docx.v1.documentBlockChildren.batchDelete",
+  "drive.v1.file.delete",
+  "im.v1.message.create",
+  "im.v1.message.delete",
+  "im.v1.message.patch",
+  "im.v1.batchMessage.send",
+  "im.v1.chat.create",
+  "bitable.v1.appTableRecord.create",
+  "bitable.v1.appTableRecord.update",
+  "bitable.v1.appTableRecord.delete",
+]
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.lark-mcp-message-send-controlled]
+command = "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+args = ["C:\\Users\\Administrator\\.codex\\scripts\\Start-FeishuMessageSendBridge.mjs"]
+cwd = "C:\\Users\\Administrator\\.codex\\tools\\lark-mcp"
+enabled = true
+required = false
+startup_timeout_sec = 60
+tool_timeout_sec = 60
+enabled_tools = [
+  "contact.v3.user.batchGetId",
+  "im.v1.message.create",
+]
+disabled_tools = [
+  "contact.v3.user.create",
+  "contact.v3.user.findByDepartment",
+  "contact.v3.user.get",
+  "contact.v3.user.list",
+  "contact.v3.user.patch",
+  "contact.v3.user.delete",
+  "contact.v3.department.children",
+  "contact.v3.department.search",
+  "contact.v3.scope.list",
+  "im.v1.message.delete",
+  "im.v1.message.patch",
+  "im.v1.batchMessage.send",
+  "im.v1.chat.create",
+  "docx.v1.document.create",
+  "docx.v1.documentBlockChildren.create",
+  "docx.v1.documentBlockChildren.batchDelete",
+  "docx.v1.documentBlock.patch",
+  "drive.v1.file.delete",
+  "bitable.v1.appTableRecord.create",
+  "bitable.v1.appTableRecord.update",
+  "bitable.v1.appTableRecord.delete",
+]
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.lark-mcp-readonly]
+command = "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+args = ["C:\\Users\\Administrator\\.codex\\scripts\\Start-FeishuMcpBridge.mjs"]
+cwd = "C:\\Users\\Administrator\\.codex\\tools\\lark-mcp"
+enabled = true
+required = false
+startup_timeout_sec = 60
+tool_timeout_sec = 60
+enabled_tools = [
+  "docx.v1.document.rawContent",
+  "wiki.v1.node.search",
+  "wiki.v2.space.getNode",
+  "bitable.v1.appTable.list",
+  "bitable.v1.appTableRecord.search",
+]
+disabled_tools = [
+  "im.v1.message.create",
+  "im.v1.chat.create",
+  "bitable.v1.appTableRecord.create",
+  "bitable.v1.appTableRecord.update",
+  "bitable.v1.appTableRecord.delete",
+  "docx.v1.document.create",
+  "docx.v1.documentBlock.patch",
+  "drive.v1.file.delete",
+]
+default_tools_approval_mode = "auto"

@@ -1,0 +1,44 @@
+{"kind":"deck","id":"pr/5lq6zc","name":"Deck"}
+{"kind":"layout","layoutId":"69f67032-4f77-407c-9d4d-24936b9e5ceb","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ea9c5947-8c33-4527-a16d-d1ebd32c4276","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/lb172e","slide":1,"title":"SUPPLIER SHIPPING WORKFLOW","textShapes":19}
+{"kind":"textbox","id":"sh/3apkbqts","slide":1,"name":"eyebrow","text":"SUPPLIER SHIPPING WORKFLOW","textPreview":"SUPPLIER SHIPPING WORKFLOW","textChars":26,"textLines":1,"bbox":[54,26,420,24]}
+{"kind":"textbox","id":"sh/4by14vud","slide":1,"name":"title","text":"供应商发货流程图","textPreview":"供应商发货流程图","textChars":8,"textLines":1,"bbox":[54,54,760,56]}
+{"kind":"textbox","id":"sh/pc72dgby","slide":1,"name":"subtitle","text":"按产品类型分为两条执行路径｜委外成品与直接销售包材共用同一路径","textPreview":"按产品类型分为两条执行路径｜委外成品与直接销售包材共用同一路径","textChars":31,"textLines":1,"bbox":[54,112,1000,30]}
+{"kind":"shape","id":"sh/qdgj6ls3","slide":1,"name":"header-rule","bbox":[54,153,1172,0]}
+{"kind":"shape","id":"sh/repkfqto","slide":1,"name":"anchor-start","bbox":[52,314,148,90]}
+{"kind":"shape","id":"sh/cfi18va9","slide":1,"name":"anchor-decision","bbox":[245,304,142,110]}
+{"kind":"shape","id":"sh/dgr2h0bu","slide":1,"name":"anchor-topType","bbox":[438,200,190,84]}
+{"kind":"shape","id":"sh/eh0ja5sf","slide":1,"name":"anchor-topStep1","bbox":[688,200,216,84]}
+{"kind":"shape","id":"sh/zi9kjat0","slide":1,"name":"anchor-topStep2","bbox":[962,183,264,118]}
+{"kind":"shape","id":"sh/z6l832p8","slide":1,"name":"anchor-bottomType","bbox":[438,433,190,78]}
+{"kind":"shape","id":"sh/y5crax83","slide":1,"name":"anchor-bottomStep1","bbox":[688,433,220,78]}
+{"kind":"shape","id":"sh/l83q5c7e","slide":1,"name":"anchor-bottomStep2","bbox":[968,433,220,78]}
+{"kind":"shape","id":"sh/k7u9c7qt","slide":1,"name":"anchor-bottomStep3","bbox":[688,576,220,72]}
+{"kind":"shape","id":"sh/bi18z29c","slide":1,"name":"anchor-bottomStep4","bbox":[968,558,250,108]}
+{"kind":"shape","id":"sh/ahsr6x8r","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/x4jq1sri","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/c3a987qx","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ve5sbmpg","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/udwrih8v","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/qtgbals3","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/rupc3q9o","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/svitcva9","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/dwru50ru","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/ex0ve5sf","slide":1,"name":"lane-a","text":"路径 A｜共用流程","textPreview":"路径 A｜共用流程","textChars":9,"textLines":1,"bbox":[438,166,230,25]}
+{"kind":"textbox","id":"sh/fy9c7a90","slide":1,"name":"lane-b","text":"路径 B｜加工流程","textPreview":"路径 B｜加工流程","textChars":9,"textLines":1,"bbox":[438,398,230,25]}
+{"kind":"textbox","id":"sh/0zidgval","slide":1,"name":"start","text":"供应商\n发货流程","textPreview":"供应商 | 发货流程","textChars":8,"textLines":2,"bbox":[52,314,148,90]}
+{"kind":"textbox","id":"sh/10ru90r6","slide":1,"name":"decision","text":"按产品类型\n分流","textPreview":"按产品类型 | 分流","textChars":8,"textLines":2,"bbox":[245,304,142,110]}
+{"kind":"textbox","id":"sh/u1wb21sb","slide":1,"name":"top-type","text":"委外成品\n直接销售包材","textPreview":"委外成品 | 直接销售包材","textChars":11,"textLines":2,"bbox":[438,200,190,84]}
+{"kind":"textbox","id":"sh/v25cb6tg","slide":1,"name":"top-step-1","text":"① 采购入库旺店通\n（七遇物流仓）","textPreview":"① 采购入库旺店通 | （七遇物流仓）","textChars":17,"textLines":2,"bbox":[688,200,216,84]}
+{"kind":"textbox","id":"sh/xwveh4be","slide":1,"name":"top-step-2","text":"② 建销售出库单\n提供系统单号给秀明核对\n提供收件人地址信息和发货方式","textPreview":"② 建销售出库单 | 提供系统单号给秀明核对 | 提供收件人地址信息和发货方式","textChars":35,"textLines":3,"bbox":[962,183,264,118]}
+{"kind":"textbox","id":"sh/cvmx8zut","slide":1,"name":"bottom-type","text":"需加工包材订单","textPreview":"需加工包材订单","textChars":7,"textLines":1,"bbox":[438,433,190,78]}
+{"kind":"textbox","id":"sh/butwfut8","slide":1,"name":"bottom-step-1","text":"① 财务在金蝶做\n销售出库给客户","textPreview":"① 财务在金蝶做 | 销售出库给客户","textChars":16,"textLines":2,"bbox":[688,433,220,78]}
+{"kind":"textbox","id":"sh/atkf69cn","slide":1,"name":"bottom-step-2","text":"② BOM表新建\n按客户自带包材","textPreview":"② BOM表新建 | 按客户自带包材","textChars":16,"textLines":2,"bbox":[968,433,220,78]}
+{"kind":"textbox","id":"sh/lkvyloba","slide":1,"name":"bottom-step-3","text":"③ 成品入库旺店通","textPreview":"③ 成品入库旺店通","textChars":9,"textLines":1,"bbox":[688,576,220,72]}
+{"kind":"textbox","id":"sh/kjmxcjup","slide":1,"name":"bottom-step-4","text":"④ 建销售出库单\n提供系统单号给秀明核对\n提供收件人地址信息和发货方式","textPreview":"④ 建销售出库单 | 提供系统单号给秀明核对 | 提供收件人地址信息和发货方式","textChars":35,"textLines":3,"bbox":[968,558,250,108]}
+{"kind":"textbox","id":"sh/zydwjet4","slide":1,"name":"route-tag-a","text":"A","textPreview":"A","textChars":1,"textLines":1,"bbox":[393,242,30,24]}
+{"kind":"textbox","id":"sh/yx4fa9cj","slide":1,"name":"route-tag-b","text":"B","textPreview":"B","textChars":1,"textLines":1,"bbox":[393,454,30,24]}
+{"kind":"textbox","id":"sh/1obe9kb6","slide":1,"name":"source-note","text":"来源：新建 XLSX 工作表 (2).xlsx｜按源表合并单元格关系还原","textPreview":"来源：新建 XLSX 工作表 (2).xlsx｜按源表合并单元格关系还原","textChars":36,"textLines":1,"bbox":[54,683,900,20]}
+{"kind":"textbox","id":"sh/0n2x0ful","slide":1,"name":"page-number","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1182,681,44,20]}
+{"kind":"notes","id":"nt/lb172e","slide":1,"text":""}

@@ -1,0 +1,6 @@
+{"kind":"deck","id":"pr/ff2t9c","name":"Deck"}
+{"kind":"layout","layoutId":"b487c616-6650-4a3e-a96d-67c61d9aac03","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"47ad9b73-a12c-44fc-a4e9-50871e48dbe1","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/byxdx9","slide":1,"title":"测试","textShapes":1}
+{"kind":"textbox","id":"sh/wratgf69","slide":1,"text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[40,40,400,100]}
+{"kind":"notes","id":"nt/byxdx9","slide":1,"text":""}

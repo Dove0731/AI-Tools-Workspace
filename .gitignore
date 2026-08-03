@@ -1,0 +1,31 @@
+# Obsidian personal workspace state
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache/
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*.clixml
+
+# Generated dependencies and caches
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.codex_tmp/
+.tmp_k3/
+07_AI工作区/飞书知识问答机器人/runtime/
+tmp/
+.trash/
+
+# Temporary and operating-system files
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+*.bak

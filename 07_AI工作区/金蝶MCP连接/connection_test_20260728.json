@@ -1,0 +1,13 @@
+{
+  "tested_at": "2026-07-28T20:05:37+08:00",
+  "connected": true,
+  "server": "39.98.44.53",
+  "data_center_name": "2023七遇集团",
+  "data_center_id": "64464dd5f498e6",
+  "account": "曾德炜",
+  "lcid": 2052,
+  "login_result_type": 1,
+  "business_documents_queried": false,
+  "write_operations_performed": false,
+  "result": "金蝶 WebAPI 登录验证成功；连接已验收，业务查询待验收。"
+}

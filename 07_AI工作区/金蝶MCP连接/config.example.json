@@ -1,0 +1,7 @@
+{
+  "base_url": "https://你的私有云金蝶域名",
+  "acct_id": "现有数据中心ID",
+  "username": "曾德炜",
+  "lcid": 2052,
+  "timeout_seconds": 30
+}

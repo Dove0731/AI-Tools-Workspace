@@ -1,0 +1,64 @@
+{
+  "vaultRoot": "../../..",
+  "sources": {
+    "localDirectories": [
+      "00_工作台与规则",
+      "06_经验与模板",
+      "09_产品开发管理",
+      "10_采购与成本管理",
+      "docs"
+    ],
+    "extensions": [".md", ".txt"],
+    "excludedPathFragments": [
+      "/.git/",
+      "/.obsidian/",
+      "/.agents/",
+      "/.codex/",
+      "/node_modules/",
+      "/97_待整理/",
+      "/98_AI输出暂存区/",
+      "/99_归档/",
+      "/07_AI工作区/",
+      "/SOP草稿/",
+      "/credential",
+      "/凭据",
+      "/密钥"
+    ],
+    "maxFileBytes": 1048576,
+    "feishuDocuments": [],
+    "feishuWikiSpaces": []
+  },
+  "retrieval": {
+    "chunkCharacters": 1400,
+    "chunkOverlapCharacters": 180,
+    "topK": 5,
+    "minimumScore": 0.35
+  },
+  "answer": {
+    "provider": "extractive",
+    "codexTimeoutMs": 180000,
+    "maxContextCharacters": 10000,
+    "maxAnswerCharacters": 3500
+  },
+  "autostart": {
+    "enabled": true,
+    "appProcessName": "Feishu",
+    "pollIntervalMs": 10000,
+    "stopWhenAppCloses": true
+  },
+  "lark": {
+    "executable": "lark-cli.cmd",
+    "identity": "bot",
+    "eventKey": "im.message.receive_v1",
+    "acceptedChatTypes": ["p2p", "group"],
+    "acceptedMessageTypes": ["text", "post"],
+    "requireMentionInGroups": true,
+    "allowedSenderIds": [],
+    "allowedChatIds": [],
+    "replyMode": "hybrid-review",
+    "sendingEnabled": true,
+    "ownerProfileFile": "owner.json",
+    "ignoreProxy": false,
+    "maximumQuestionCharacters": 500
+  }
+}

@@ -1,0 +1,672 @@
+﻿{
+  "sections": [
+    {
+      "index": 1,
+      "width_in": 8.5,
+      "height_in": 11.0,
+      "top_in": 1.0,
+      "bottom_in": 1.0,
+      "left_in": 1.0,
+      "right_in": 1.0,
+      "header_in": 0.4917,
+      "footer_in": 0.4917,
+      "start_type": 2
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "部门负责人每周经营复盘表",
+      "style": "Normal",
+      "alignment": 1,
+      "space_before_pt": 8.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 18.0,
+      "bold": true
+    },
+    {
+      "text": "用于部门问题雷达、团队观察、机制沉淀与经营闭环推进",
+      "style": "Normal",
+      "alignment": 1,
+      "space_before_pt": null,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 10.5,
+      "bold": false
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": null,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "一、填写规则",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "• 不要写“已沟通、已处理、持续跟进”这类空话，必须写出事实、数据、责任人、时间点、交付物和检查方式。",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": null,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 10.5,
+      "bold": false
+    },
+    {
+      "text": "• 红色代表已经影响部门结果或需要上级介入；黄色代表存在风险，需要部门负责人推动闭环；绿色代表正常推进。",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": null,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 10.5,
+      "bold": false
+    },
+    {
+      "text": "• 每周至少沉淀一个 SOP、模板、检查表、话术或流程优化，让部门问题处理后变成可复用的组织能力。",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": null,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 10.5,
+      "bold": false
+    },
+    {
+      "text": "二、经营总判断",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "三、问题雷达",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "四、团队与岗位观察",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "五、机制沉淀与 AI 应用",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "六、闭环推进",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "七、下周三件重点",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "八、底部三问",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 18.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": "Microsoft YaHei",
+      "font_size_pt": 12.0,
+      "bold": true
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": 2.0,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    },
+    {
+      "text": "",
+      "style": "Normal",
+      "alignment": null,
+      "space_before_pt": null,
+      "space_after_pt": 4.0,
+      "line_spacing": 1.15,
+      "font_name": null,
+      "font_size_pt": null,
+      "bold": null
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "rows": 6,
+      "cols": 2,
+      "style": "Table Grid",
+      "grid_twips": [
+        "1800",
+        "7560"
+      ],
+      "sample_rows": [
+        [
+          "项目",
+          "填写内容"
+        ],
+        [
+          "填写人",
+          "部门负责人：____"
+        ],
+        [
+          "汇报对象",
+          "直属上级 / 副总：____"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": 1,
+      "cols": 1,
+      "style": "Normal Table",
+      "grid_twips": [
+        "9360"
+      ],
+      "sample_rows": [
+        [
+          "使用定位\n这不是部门工作量汇报表，而是部门经营闭环表。每一项必须写清楚：问题是什么、影响什么结果、责任人是谁、下一步动作是什么、什么时候检查。"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": 5,
+      "cols": 4,
+      "style": "Table Grid",
+      "grid_twips": [
+        "1800",
+        "4680",
+        "1200",
+        "1680"
+      ],
+      "sample_rows": [
+        [
+          "项目",
+          "本周填写内容",
+          "红黄绿",
+          "上级介入"
+        ],
+        [
+          "整体经营状态",
+          "本周部门目标完成情况、核心结果、重大异常、人员状态和跨部门协同情况。必须写事实和数据。",
+          "绿 / 黄 / 红",
+          "是 / 否"
+        ],
+        [
+          "本周最大风险",
+          "影响收入、交付、质量、成本、人效、客户、内部服务或团队稳定的最大风险是什么。",
+          "绿 / 黄 / 红",
+          "是 / 否"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": 6,
+      "cols": 4,
+      "style": "Table Grid",
+      "grid_twips": [
+        "1800",
+        "3600",
+        "1200",
+        "2760"
+      ],
+      "sample_rows": [
+        [
+          "维度",
+          "本周发现",
+          "判断",
+          "责任与下周动作"
+        ],
+        [
+          "部门目标 / 核心结果",
+          "请写目标完成情况、关键数据、结果偏差，不写感受。",
+          "绿 / 黄 / 红：影响什么结果？",
+          "责任人：____\n截止：____\n动作：____"
+        ],
+        [
+          "客户 / 订单 / 内部服务",
+          "请写客户、订单、内部服务对象或业务需求变化。",
+          "绿 / 黄 / 红：是否影响客户体验、订单或服务质量？",
+          "责任人：____\n截止：____\n动作：____"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "rows": 6,
+      "cols": 4,
+      "style": "Table Grid",
+      "grid_twips": [
+        "1800",
+        "3600",
+        "1200",
+        "2760"
+      ],
+      "sample_rows": [
+        [
+          "观察对象",
+          "本周行为证据",
+          "判断",
+          "辅导或调整动作"
+        ],
+        [
+          "主动拿方案的人",
+          "谁主动发现问题、拿出方案、推动结果？写具体事件。",
+          "绿 / 黄 / 红",
+          "下一步如何授权、激励或复制经验？"
+        ],
+        [
+          "停留在事务层的人",
+          "谁只做执行、不看结果、不主动暴露问题？写具体事件。",
+          "绿 / 黄 / 红",
+          "如何要求其带方案、带数据、带复盘？"
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "rows": 6,
+      "cols": 4,
+      "style": "Table Grid",
+      "grid_twips": [
+        "1800",
+        "3360",
+        "2160",
+        "2040"
+      ],
+      "sample_rows": [
+        [
+          "事项",
+          "本周沉淀内容",
+          "使用场景",
+          "下周检查"
+        ],
+        [
+          "SOP / 流程",
+          "名称：____\n版本：____\n核心步骤：____",
+          "适用于什么场景？由谁使用？",
+          "是否开始试用？谁检查？"
+        ],
+        [
+          "模板 / 检查表",
+          "名称：____\n字段：____\n使用要求：____",
+          "用于数据汇总、质量检查、交付验收或复盘。",
+          "是否减少重复沟通或漏项？"
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "rows": 4,
+      "cols": 4,
+      "style": "Table Grid",
+      "grid_twips": [
+        "1800",
+        "2520",
+        "2520",
+        "2520"
+      ],
+      "sample_rows": [
+        [
+          "事项",
+          "本周结果",
+          "未完成原因",
+          "下周处理"
+        ],
+        [
+          "上周重点事项 1",
+          "结果：____",
+          "原因：____",
+          "下周动作：____\n责任人：____\n截止：____"
+        ],
+        [
+          "上周重点事项 2",
+          "结果：____",
+          "原因：____",
+          "下周动作：____\n责任人：____\n截止：____"
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "rows": 4,
+      "cols": 5,
+      "style": "Table Grid",
+      "grid_twips": [
+        "900",
+        "2880",
+        "1440",
+        "2880",
+        "1260"
+      ],
+      "sample_rows": [
+        [
+          "优先级",
+          "事项",
+          "责任人",
+          "交付物 / 检查点",
+          "完成时间"
+        ],
+        [
+          "P1",
+          "____",
+          "____",
+          "交付物：____\n检查点：____",
+          "____"
+        ],
+        [
+          "P2",
+          "____",
+          "____",
+          "交付物：____\n检查点：____",
+          "____"
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "rows": 4,
+      "cols": 2,
+      "style": "Table Grid",
+      "grid_twips": [
+        "4200",
+        "5160"
+      ],
+      "sample_rows": [
+        [
+          "问题",
+          "本周回答"
+        ],
+        [
+          "1. 是否让上级更早看见部门经营问题？",
+          "请写具体问题、数据、影响和已采取动作。"
+        ],
+        [
+          "2. 是否让团队更主动、更有方案？",
+          "请写谁主动拿方案、谁仍需要辅导、下周如何训练。"
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "rows": 1,
+      "cols": 1,
+      "style": "Normal Table",
+      "grid_twips": [
+        "9360"
+      ],
+      "sample_rows": [
+        [
+          "提交前自检\n没有事实数据、责任人、截止时间、交付物和检查动作，就不是经营复盘，只是工作记录。"
+        ]
+      ]
+    }
+  ],
+  "headers": [
+    [
+      ""
+    ]
+  ],
+  "footers": [
+    [
+      "企业经营闭环工具"
+    ]
+  ],
+  "parts": [
+    {
+      "path": "[Content_Types].xml",
+      "size": 1994,
+      "sha256": "479ad1a2258771db93540fbde6ad43e861d8d39dd2559e3f6db17286b11cc6ab"
+    },
+    {
+      "path": "_rels/.rels",
+      "size": 734,
+      "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4"
+    },
+    {
+      "path": "customXml/_rels/item1.xml.rels",
+      "size": 295,
+      "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c"
+    },
+    {
+      "path": "customXml/item1.xml",
+      "size": 262,
+      "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144"
+    },
+    {
+      "path": "customXml/itemProps1.xml",
+      "size": 354,
+      "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e"
+    },
+    {
+      "path": "docProps/app.xml",
+      "size": 1132,
+      "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081"
+    },
+    {
+      "path": "docProps/core.xml",
+      "size": 721,
+      "sha256": "d14be8284e406d14dc2a576b19f15e7f637b955f9e27a3d9ed871ec99606f7ba"
+    },
+    {
+      "path": "docProps/thumbnail.jpeg",
+      "size": 8324,
+      "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead"
+    },
+    {
+      "path": "word/_rels/document.xml.rels",
+      "size": 1484,
+      "sha256": "157ed86827865b095c9c6b39e7c3451315a4b0d6127daa8636026684d8b9df89"
+    },
+    {
+      "path": "word/document.xml",
+      "size": 97669,
+      "sha256": "df62c894ba5b25d15fd234bbfac020acabfb9e0006e06a599b91d8e5de0ee8b1"
+    },
+    {
+      "path": "word/fontTable.xml",
+      "size": 2811,
+      "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb"
+    },
+    {
+      "path": "word/footer1.xml",
+      "size": 1562,
+      "sha256": "f9c38739c2d8341043588a2a8f8656e7e40517938aa933aa556ab2366dfb0d23"
+    },
+    {
+      "path": "word/header1.xml",
+      "size": 1537,
+      "sha256": "6a3e029bfd32e9b4ac6885e113fa0516dc363e85f5a9e3773902158b75c152db"
+    },
+    {
+      "path": "word/numbering.xml",
+      "size": 5513,
+      "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce"
+    },
+    {
+      "path": "word/settings.xml",
+      "size": 2535,
+      "sha256": "51a0d348fe85965c66e4748a03c3c0d055d78455514f03cb121c334af7d73689"
+    },
+    {
+      "path": "word/styles.xml",
+      "size": 349567,
+      "sha256": "b2d614b9deb99aa0cf22c6e76d24e7af28fab25eae8b201f95719c35097109b9"
+    },
+    {
+      "path": "word/stylesWithEffects.xml",
+      "size": 438131,
+      "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15"
+    },
+    {
+      "path": "word/theme/theme1.xml",
+      "size": 10939,
+      "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941"
+    },
+    {
+      "path": "word/webSettings.xml",
+      "size": 438,
+      "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95"
+    }
+  ],
+  "document_xml_tokens": {
+    "fills": {
+      "E8EEF5": 29,
+      "FFFFFF": 119,
+      "FFF7E6": 2
+    },
+    "colors": {
+      "A6A6A6": 48,
+      "E0B15A": 12
+    },
+    "sizes_half_points": {
+      "36": 1,
+      "21": 4,
+      "19": 150,
+      "24": 8
+    },
+    "fonts": {
+      "Microsoft YaHei": 489
+    }
+  }
+}

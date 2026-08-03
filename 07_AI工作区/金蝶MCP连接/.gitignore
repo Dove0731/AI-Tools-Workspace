@@ -1,0 +1,4 @@
+config.json
+credential.clixml
+__pycache__/
+*.pyc

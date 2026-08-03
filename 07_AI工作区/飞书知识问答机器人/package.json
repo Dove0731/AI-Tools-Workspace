@@ -1,0 +1,18 @@
+{
+  "name": "feishu-knowledge-qa-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "doctor": "node src/main.mjs doctor",
+    "index": "node src/main.mjs index",
+    "ask": "node src/main.mjs ask",
+    "listen": "node src/main.mjs listen",
+    "autostart": "node src/autostart.mjs",
+    "sync-feishu": "node src/main.mjs sync-feishu",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
