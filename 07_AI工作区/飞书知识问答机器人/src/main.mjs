@@ -87,9 +87,7 @@ async function main() {
           if (result.ignored) console.log(`忽略事件：${result.reason}`);
           else if (result.action === "approved-and-sent") console.log(`本人已同意并发送：${result.draft.draftId}`);
           else if (result.action === "rejected") console.log(`本人已驳回：${result.draft.draftId}`);
-          else if (result.action === "owner-answered-and-learned") console.log(`本人已补充回答并完成场景入库：${result.draft.draftId}`);
           else if (result.action === "no-pending-review") console.log("本人发出同意，但当前无待审核回答。");
-          else if (result.route === "owner-direct" && result.draft.needsOwnerAnswer) console.log(`已请本人补充标准答案：${result.draft.draftId}`);
           else if (result.route === "owner-direct") console.log(`已直接回复本人：${result.draft.draftId}`);
           else if (result.route === "review") console.log(`已发送至本人审核：${result.draft.draftId}\n${result.paths.markdownPath}`);
           else console.log(`已生成待审核草稿：${result.draft.draftId}\n${result.paths.markdownPath}`);

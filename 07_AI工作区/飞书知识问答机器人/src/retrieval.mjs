@@ -97,10 +97,6 @@ export function searchIndex(index, question, options = {}) {
 }
 
 export function sourceLabel(result) {
-  const location = result.sourceType === "obsidian"
-    ? result.relativePath
-    : result.sourceType === "learned-scenario"
-      ? "本人已确认场景库"
-      : result.sourceUrl || result.sourceId;
+  const location = result.sourceType === "obsidian" ? result.relativePath : result.sourceUrl || result.sourceId;
   return `${result.sourceTitle} > ${result.heading}（${location}）`;
 }

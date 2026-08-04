@@ -2,7 +2,6 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { ensureRuntimeDirectories, runtimePath } from "./config.mjs";
-import { listActiveScenarios } from "./scenario-db.mjs";
 
 function slash(value) {
   return value.replaceAll("\\", "/");
@@ -173,24 +172,9 @@ function feishuCacheChunks(config) {
   return chunks;
 }
 
-function scenarioChunks(config) {
-  return listActiveScenarios(config).map((scenario) =>
-    makeChunk({
-      sourceType: "learned-scenario",
-      sourceId: scenario.id,
-      sourceTitle: "本人确认的问答场景",
-      relativePath: "",
-      sourceUrl: "",
-      heading: scenario.question,
-      text: scenario.answer,
-      modifiedAt: scenario.updated_at
-    })
-  );
-}
-
 export function buildIndex(config) {
   ensureRuntimeDirectories(config);
-  const chunks = [...localChunks(config), ...feishuCacheChunks(config), ...scenarioChunks(config)];
+  const chunks = [...localChunks(config), ...feishuCacheChunks(config)];
   const sources = new Set(chunks.map((chunk) => `${chunk.sourceType}:${chunk.sourceId}`));
   const index = {
     version: 1,
@@ -217,4 +201,4 @@ export function saveFeishuCache(config, item) {
   return payload;
 }
 
-export const __test = { sectionize, chunkText, shouldExclude, scenarioChunks };
+export const __test = { sectionize, chunkText, shouldExclude };

@@ -1,12 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import fs from "node:fs";
-import os from "node:os";
-import path from "node:path";
 import { tokenize, searchIndex } from "../src/retrieval.mjs";
 import { __test as answerTest } from "../src/answer.mjs";
-import { applyOwnerAnswer, cleanIncomingQuestion, findPendingOwnerAnswerDraft, loadDraft, parseOwnerAnswerCommand, parseReviewCommand, routeEvent, shouldAcceptEvent, __test as serviceTest } from "../src/service.mjs";
-import { addScenario, listActiveScenarios } from "../src/scenario-db.mjs";
+import { cleanIncomingQuestion, parseReviewCommand, routeEvent, shouldAcceptEvent } from "../src/service.mjs";
 
 test("中文检索会生成双字词", () => {
   const tokens = tokenize("供应商交期风险");
@@ -107,86 +103,12 @@ test("群聊问题会剥离机器人 mention 前缀", () => {
   assert.equal(cleanIncomingQuestion("@曾德炜的飞书CLI  你吃饭了没"), "你吃饭了没");
 });
 
-test("本人可用草稿编号补充多行标准答案", () => {
-  assert.deepEqual(parseOwnerAnswerCommand("补充 QA-20260803-abc：第一行\n第二行"), {
-    draftId: "QA-20260803-abc",
-    answer: "第一行\n第二行"
-  });
-});
-
-test("只把回复到指定审核消息的本人消息关联为待补充答案", () => {
-  const runtimeDir = fs.mkdtempSync(path.join(os.tmpdir(), "feishu-qa-draft-"));
-  const config = { runtimeDir, lark: { ownerProfileFile: "owner.json" } };
-  serviceTest.writeDraft(config, {
-    draftId: "QA-20260803-linked",
-    createdAt: new Date().toISOString(),
-    status: "待本人补充回答（已通知本人）",
-    senderId: "ou_other",
-    chatId: "oc_other",
-    chatType: "p2p",
-    question: "未收录问题",
-    answer: "",
-    provider: "extractive",
-    reviewMessageId: "om_review",
-    reviewNotifiedAt: new Date().toISOString(),
-    results: []
-  });
-  assert.equal(findPendingOwnerAnswerDraft(config, { reply_to: "om_review" })?.draftId, "QA-20260803-linked");
-  assert.equal(findPendingOwnerAnswerDraft(config, { reply_to: "om_other" }), null);
-  fs.rmSync(runtimeDir, { recursive: true, force: true });
-});
-
-test("场景库按问题更新标准答案且不重复建场景", () => {
-  const runtimeDir = fs.mkdtempSync(path.join(os.tmpdir(), "feishu-qa-db-"));
-  const config = { runtimeDir };
-  addScenario(config, { question: "  这个场景怎么处理？ ", answer: "答案一" });
-  addScenario(config, { question: "这个场景怎么处理？", answer: "答案二" });
-  const scenarios = listActiveScenarios(config);
-  assert.equal(scenarios.length, 1);
-  assert.equal(scenarios[0].answer, "答案二");
-  fs.rmSync(runtimeDir, { recursive: true, force: true });
-});
-
-test("本人回复可完成草稿入库并立即进入知识索引", async () => {
-  const runtimeDir = fs.mkdtempSync(path.join(os.tmpdir(), "feishu-qa-flow-"));
-  const config = {
-    runtimeDir,
-    vaultRoot: runtimeDir,
-    sources: {
-      localDirectories: [],
-      excludedPathFragments: [],
-      extensions: [".md"],
-      maxFileBytes: 1024
-    },
-    retrieval: { chunkCharacters: 500, chunkOverlapCharacters: 50 },
-    answer: { maxAnswerCharacters: 3500 },
-    lark: { ownerProfileFile: "owner.json" }
-  };
-  serviceTest.writeDraft(config, {
-    draftId: "QA-20260803-flow",
-    createdAt: new Date().toISOString(),
-    status: "待本人补充回答（已通知本人）",
-    senderId: "ou_owner",
-    chatId: "oc_owner",
-    chatType: "p2p",
-    messageId: "om_question",
-    question: "样品泄漏时如何处理？",
-    answer: "",
-    provider: "extractive",
-    reviewMessageId: "om_review",
-    reviewNotifiedAt: new Date().toISOString(),
-    results: []
-  });
-  const draft = await applyOwnerAnswer(
-    config,
-    "QA-20260803-flow",
-    "先隔离样品并保留证据，责任与放行结论待确认。",
-    { senderId: "ou_owner", chatId: "oc_owner" },
-    { message_id: "om_answer" }
-  );
-  assert.equal(draft.status, "已由本人补充并入库");
-  assert.equal(loadDraft(config, draft.draftId).draft.answer, "先隔离样品并保留证据，责任与放行结论待确认。");
-  const index = JSON.parse(fs.readFileSync(path.join(runtimeDir, "index.json"), "utf8"));
-  assert.equal(index.chunks.some((chunk) => chunk.sourceType === "learned-scenario"), true);
-  fs.rmSync(runtimeDir, { recursive: true, force: true });
+test("补充文本不再触发特殊审核或学习流程", () => {
+  const owner = { senderId: "ou_owner", chatId: "oc_owner" };
+  assert.equal(routeEvent({
+    sender_id: "ou_owner",
+    chat_id: "oc_owner",
+    chat_type: "p2p",
+    content: "补充 QA-20260803-abc：标准答案"
+  }, owner), "owner-direct");
 });
