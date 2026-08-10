@@ -29,3 +29,8 @@ Thumbs.db
 ~$*
 *.tmp
 *.bak
+
+# AI knowledge synchronization runtime and private source exports
+.ai-sync/
+97_待整理/ChatGPT导出投递箱/*.zip
+97_待整理/ChatGPT导出投递箱/conversations*.json
