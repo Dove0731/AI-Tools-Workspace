@@ -23,6 +23,9 @@
 tmp/
 .trash/
 
+# Local-only procurement automation workbook templates
+10_采购与成本管理/采购自动化分析/模板文件/*.xlsx
+
 # Temporary and operating-system files
 Thumbs.db
 .DS_Store
